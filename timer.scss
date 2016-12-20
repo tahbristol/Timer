@@ -1,0 +1,22 @@
+.btn{
+    width:100px;
+    height: 100px;
+    margin:20px 10px;
+}
+
+.col-md-6{
+    p{
+        font-size:40px;
+    }
+}
+
+.col-sm-12{
+    margin-left:18%;
+    .btn{
+        width:300px;
+        height:300px;
+    }
+    p{
+        font-size:72px;
+    }
+}
