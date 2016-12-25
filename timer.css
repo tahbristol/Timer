@@ -1,17 +1,47 @@
+.col-md-12 {
+  text-align: center; }
+
 .btn {
   width: 100px;
   height: 100px;
   margin: 20px 10px; }
 
-.col-md-6 p {
-  font-size: 40px; }
+div.breakSpace, div.sessionSpace {
+  background-color: cornflowerblue; }
 
-.col-sm-12 {
-  margin-left: 18%; }
-  .col-sm-12 .btn {
-    width: 300px;
-    height: 300px; }
-  .col-sm-12 p {
-    font-size: 20px; }
+div.sessionSpace {
+  z-index: 1; }
+
+div.breakSpace, div.sessionSpace, div.main {
+  margin-left: -50px;
+  display: inline-block; }
+  div.breakSpace .mainTimer, div.sessionSpace .mainTimer, div.main .mainTimer {
+    background-color: cornflowerblue; }
+
+.breakSpace, .sessionSpace {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 100%; }
+  .breakSpace #add1, .breakSpace #minus1, .breakSpace #add2, .breakSpace #minus2, .sessionSpace #add1, .sessionSpace #minus1, .sessionSpace #add2, .sessionSpace #minus2 {
+    display: inline-block; }
+  .breakSpace #add1, .breakSpace #add2, .sessionSpace #add1, .sessionSpace #add2 {
+    margin-left: 20px; }
+  .breakSpace p#breaks, .breakSpace p#session, .sessionSpace p#breaks, .sessionSpace p#session {
+    padding-top: 40px; }
+
+.main .mainTimer {
+  border-radius: 100%;
+  width: 350px;
+  height: 350px; }
+.main p {
+  font-size: 52px; }
+.main #go, .main #reset {
+  margin-top: 20px;
+  position: absolute;
+  display: block; }
+.main #reset {
+  margin-left: 50px; }
 
 /*# sourceMappingURL=timer.css.map */
