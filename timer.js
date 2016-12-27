@@ -51,14 +51,14 @@ $(function() {
     $('#go').on('click', function() {
 
 
-        //variables for minutes and seconds
+        //variables for minutes and seconds ==>Session Time
         var min = sessionTime;
         var seconds = 0;
 
         //Display the  session time in the browser
          $('#time').text("Work for: " + min + ":" + seconds);
            //Count down in seconds from set time(sessionTime)
-            setInterval(function(){
+            var start = setInterval(function(){
 
                 //To decrease the minute when seconds get to 0
                  if(seconds == 0  && min !== 0){
@@ -82,6 +82,15 @@ $(function() {
                 //If time is up, display message
                  else if(min == 0 && seconds == 0){
                       $('#time').text("Work Session Over");
+                    /*  var delay = setTimeOut(function(){
+
+                          start()
+
+
+
+
+
+                      })*/
                  }
 
 
@@ -89,6 +98,14 @@ $(function() {
 
                 },1000);
 
+            //    start(min,seconds);
+
+                //Reset Button
+                $('#reset').on('click',function(){
+                    clearInterval(start);
+                    sessionTime = 0;
+                    breakTime = 0;
+                });
 
 
 

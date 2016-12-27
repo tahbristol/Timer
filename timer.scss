@@ -12,19 +12,18 @@ $make-circle: 100%;
 div.breakSpace, div.sessionSpace{
     background-color:cornflowerblue;
 }
-div.sessionSpace{
-    z-index: 1;
-}
+
 div.breakSpace, div.sessionSpace, div.main{
     .mainTimer{
         background-color:cornflowerblue;
     }
 
 
-    margin-left:-50px;
+
     display:inline-block;
 }
 .breakSpace, .sessionSpace{
+    font-size:30px;
     background-color:yellow;
     width:200px;
     height:200px;
@@ -50,7 +49,8 @@ div.breakSpace{
 .main{
 
     .mainTimer{
-
+        margin-top:20px;
+        border:none;
         border-radius:$make-circle;
         width:350px;
         height:350px;
@@ -59,12 +59,10 @@ div.breakSpace{
         font-size:52px;
     }
 
-    #go, #reset{
-        margin-top:20px;
-        position:absolute;
-        display: block;
-    }
-    #reset{
-        margin-left:50px;
-    }
+
+
+}
+#go, #reset{
+    margin-top:20px;
+
 }
