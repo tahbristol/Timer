@@ -21,12 +21,13 @@
     <div class='container'>
         <div class='row'>
             <div class='col-md-12 '>
-                <div class='breakSpace'> <p id='breaks'>T</p> <p id='minus1'>-</p><p id='add1'>+</p></div>
-                <div class='main'>
-                <button class='mainTimer'><p id='time'>0</p>
 
-            </div>
-                <div class='sessionSpace'><p id='session'>0</p><p id='minus2'>-</p><p id='add2'>+</p></div>
+                <div class='breakSpace'> <p id='breaks'>0</p> <p id='minus1'>-</p><p id='add1'>+</p><h5>Break</h5></div>
+                <div class='main'>
+                    <div class='mainTimer'><p id='time'>0</p><h3>Session Time</h3></div>
+                </div>
+
+                <div class='sessionSpace'><p id='session'>0</p><p id='minus2'>-</p><p id='add2'>+</p><h5>Session</h5></div>
             </div>
             <div class='col-md-12'>
                 <button id='go'>Go!</button></button>
@@ -42,10 +43,17 @@
     <div class='container'>
         <div class='row'>
 
-            <!--<div class='col-sm-12'>
-                <button class='btn btn-primary'><p id='time'>0</p>
-                <button id='go'>Go!</button></button>
-            </div>-->
+            <audio id="sessionAlert">
+                <source src="alert2.mp3" type="audio/mpeg">
+                <!--<source src="alert3.mp3" type="audio/mpeg">-->
+
+            </audio>
+
+            <audio id="breakAlert">
+                <!--<source src="alert2.mp3" type="audio/mpeg">-->
+                <source src="alert3.mp3" type="audio/mpeg">
+
+            </audio>
         </div>
     </div>
 

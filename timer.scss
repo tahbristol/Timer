@@ -22,6 +22,7 @@ div.breakSpace, div.sessionSpace, div.main{
 
     display:inline-block;
 }
+
 .breakSpace, .sessionSpace{
     font-size:30px;
     background-color:yellow;
@@ -49,6 +50,7 @@ div.breakSpace{
 .main{
 
     .mainTimer{
+        padding-top:100px;
         margin-top:20px;
         border:none;
         border-radius:$make-circle;
@@ -56,7 +58,7 @@ div.breakSpace{
         height:350px;
     }
     p{
-        font-size:52px;
+        font-size:30px;
     }
 
 

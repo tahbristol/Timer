@@ -29,13 +29,14 @@ div.breakSpace, div.sessionSpace, div.main {
     padding-top: 40px; }
 
 .main .mainTimer {
+  padding-top: 100px;
   margin-top: 20px;
   border: none;
   border-radius: 100%;
   width: 350px;
   height: 350px; }
 .main p {
-  font-size: 52px; }
+  font-size: 30px; }
 
 #go, #reset {
   margin-top: 20px; }
